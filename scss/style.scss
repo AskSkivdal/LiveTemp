@@ -15,11 +15,14 @@ body {
     align-items: center;
 }
 
+.temp-container {
+    text-align: center;
+}
+
 .temp {
     font-size: 12rem;
     margin: 0;
     padding: 0;
-    text-align: center;
     transition: font-size 500ms linear;
 }
 

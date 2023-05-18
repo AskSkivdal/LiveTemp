@@ -16,7 +16,9 @@ function getTempAt(lat, lon) {
 
     Http.onreadystatechange = (e) => {
         resp = JSON.parse(Http.responseText)
+        console.log(resp)
         document.querySelector("#temp").innerText = resp.current_weather.temperature
+        document.querySelector("#elevation").innerText = resp.elevation
     }
 }
 
