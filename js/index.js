@@ -20,8 +20,10 @@ function getTempAt(lat, lon) {
     }
 }
 
-getLocation((resp) => {
-    console.log(resp)
-    getTempAt(resp.coords.latitude, resp.coords.longitude)
-})
+setInterval(()=> {
+    getLocation((resp) => {
+        console.log(resp)
+        getTempAt(resp.coords.latitude, resp.coords.longitude)
+    })    
+}, 1000*60*5)
 
