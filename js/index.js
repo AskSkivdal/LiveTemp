@@ -20,10 +20,16 @@ function getTempAt(lat, lon) {
     }
 }
 
-setInterval(()=> {
+
+function update() {
     getLocation((resp) => {
         console.log(resp)
         getTempAt(resp.coords.latitude, resp.coords.longitude)
-    })    
-}, 1000*60*5)
+    }) 
+}
 
+update()
+
+setInterval(()=> {
+    update()      
+}, 1000*60*5)

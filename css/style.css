@@ -16,8 +16,15 @@ body {
   font-size: 12rem;
   margin: 0;
   padding: 0;
-  text-align: center; }
+  text-align: center;
+  transition: font-size 500ms linear; }
 
+@media (max-width: 500px) {
+  .temp {
+    font-size: 8rem; } }
+@media (max-width: 300px) {
+  .temp {
+    font-size: 4rem; } }
 .temp-container {
   display: flex;
   flex-direction: column; }
