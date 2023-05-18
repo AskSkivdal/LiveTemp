@@ -6,10 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LiveTemp</title>
     <link rel="stylesheet" href="./css/style.css">
-    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <body>
-    <div class="temp-container">
+    <div class="controls">
+        <a href="javascript:update()" class="refresh-btn">
+            <span class="material-symbols-outlined">
+                refresh
+            </span>
+        </a>
+    </div>
+    <div class="info">
         <p class="temp"><span id="temp">---</span>c</p>
         <p class="elevation"><span id="elevation">---</span>moh</p>
     </div>

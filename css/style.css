@@ -9,11 +9,23 @@ html, body {
 
 body {
   display: flex;
-  justify-content: center;
-  align-items: center; }
+  flex-direction: column; }
 
-.temp-container {
-  text-align: center; }
+.controls {
+  display: flex;
+  justify-content: end;
+  padding: 0 5px; }
+  .controls .refresh-btn {
+    color: white;
+    font-size: 2rem; }
+
+.info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1; }
 
 .temp {
   font-size: 12rem;
@@ -27,10 +39,6 @@ body {
 @media (max-width: 300px) {
   .temp {
     font-size: 4rem; } }
-.temp-container {
-  display: flex;
-  flex-direction: column; }
-
 .location {
   font-size: 2rem;
   text-align: center; }
